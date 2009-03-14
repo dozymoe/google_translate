@@ -1,0 +1,11 @@
+type,name,res_id,src,value,fuzzy
+model,"ir.action,name",act_google_translate,Google Translate,Google Übersetzung,0
+model,"ir.translation.google_translate.init,name",0,Translate with Google Init,Google Übersetzung Init,0
+model,"ir.translation.google_translate.start,name",0,Translate with Google Start,Google Übersetzung Start,0
+view,ir.translation.google_translate.init,0,Google Translate,Google Übersetzung,0
+view,ir.translation.google_translate.init,0,Translate with Google Translate?,Übersetzung bei Google holen?,0
+view,ir.translation.google_translate.start,0,Google Translate,Google Übersetzung,0
+view,ir.translation.google_translate.start,0,Translate Succeed!,Fertig!,0
+wizard_button,"ir.translation.google_translate,init,end",0,Cancel,Abbrechen,0
+wizard_button,"ir.translation.google_translate,init,start",0,Start translate,Übersetzung holen,0
+wizard_button,"ir.translation.google_translate,start,end",0,Ok,OK,0
