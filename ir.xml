@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <record model="ir.ui.view" id="google_translate_init_view_form">
+            <field name="model">ir.translation.google_translate.init</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <form string="Google Translate" col="2">
+                    <label string="Translate with Google Translate?" id="translate"/>
+                </form>
+                ]]>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="google_translate_start_view_form">
+            <field name="model">ir.translation.google_translate.start</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <form string="Google Translate" col="2">
+                    <label string="Translate Succeed!" id="succeed"/>
+                </form>
+                ]]>
+            </field>
+        </record>
+
+        <record model="ir.action.wizard" id="act_google_translate">
+            <field name="name">Google Translate</field>
+            <field name="wiz_name">ir.translation.google_translate</field>
+            <field name="model">ir.translation</field>
+        </record>
+        <record model="ir.action.keyword" id="act_google_translate_keyword">
+            <field name="keyword">form_action</field>
+            <field name="model">ir.translation,0</field>
+            <field name="action" ref="act_google_translate"/>
+        </record>
+
+    </data>
+</tryton>
