@@ -3,6 +3,7 @@
 {
     'name' : 'Google Translate',
     'name_de_DE' : 'Google Übersetzung',
+    'name_es_ES': 'Google Traductor',
     'name_fr_FR': 'Google Translate',
     'version' : '1.1.0',
     'author' : 'B2CK',
@@ -10,6 +11,7 @@
     'website': 'http://www.tryton.org/',
     'description': 'Translate items with Google Translate',
     'description_de_DE': 'Unübersetzte Elemente per Google Übersetzung ausfüllen',
+    'description_es_ES': 'Traduce términos con Google Traductor',
     'description_fr_FR': 'Traduit les termes avec Google Translate',
     'depends' : [
         'ir',
@@ -19,6 +21,7 @@
     ],
     'translation': [
         'de_DE.csv',
+	'es_ES.csv',
         'fr_FR.csv',
     ],
 }
