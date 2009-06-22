@@ -7,20 +7,14 @@ import re
 
 info = eval(file('__tryton__.py').read())
 
-requires = []
+requires = ['BeautifulSoup']
 for dep in info.get('depends', []):
-    match = re.compile(
-            '(ir|res|workflow|webdav)((\s|$|<|>|<=|>=|==|!=).*?$)').match(dep)
-    if match:
-        continue
-    else:
-        dep = 'trytond_' + dep
-    requires.append(dep)
+    if not re.match(r'(ir|res|workflow|webdav)(\W|$)', dep):
+        requires.append('trytond_' + dep)
 
 major_version, minor_version, _ = info.get('version', '0.0.1').split('.', 2)
 requires.append('trytond >= %s.%s' % (major_version, minor_version))
-requires.append('trytond < %s.%s' % (major_version, str(int(minor_version) + 1)))
-requires.append('BeautifulSoup')
+requires.append('trytond < %s.%s' % (major_version, int(minor_version) + 1))
 
 setup(name='trytond_google_translate',
     version=info.get('version', '0.0.1'),
