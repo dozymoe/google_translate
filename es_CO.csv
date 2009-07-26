@@ -6,6 +6,6 @@ view,ir.translation.google_translate.init,0,Google Translate,Traductor de Google
 view,ir.translation.google_translate.init,0,Translate with Google Translate?,¿Traducir con el Traductor de Google?,0
 view,ir.translation.google_translate.start,0,Google Translate,Traductor de Google,0
 view,ir.translation.google_translate.start,0,Translate Succeed!,¡Traducción Exitosa!,0
-wizard_button,"ir.translation.google_translate,init,end",0,Cancel,Cancelar,1
+wizard_button,"ir.translation.google_translate,init,end",0,Cancel,Cancelar,0
 wizard_button,"ir.translation.google_translate,init,start",0,Start translate,Comenzar traducción,0
-wizard_button,"ir.translation.google_translate,start,end",0,Ok,Aceptar,1
+wizard_button,"ir.translation.google_translate,start,end",0,Ok,Aceptar,0
