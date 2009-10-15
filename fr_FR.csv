@@ -5,7 +5,7 @@ model,"ir.translation.google_translate.start,name",0,Translate with Google Start
 view,ir.translation.google_translate.init,0,Google Translate,Google Translate,0
 view,ir.translation.google_translate.init,0,Translate with Google Translate?,Traduire avec Google Translate?,0
 view,ir.translation.google_translate.start,0,Google Translate,Google Translate,0
-view,ir.translation.google_translate.start,0,Translate Succeed!,Traduction réussite !,0
+view,ir.translation.google_translate.start,0,Translate Succeed!,Traduction réussie !,0
 wizard_button,"ir.translation.google_translate,init,end",0,Cancel,Annuler,0
 wizard_button,"ir.translation.google_translate,init,start",0,Start translate,Démarrer la traduction,0
 wizard_button,"ir.translation.google_translate,start,end",0,Ok,Ok,0
