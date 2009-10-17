@@ -1,7 +1,7 @@
 type,name,res_id,src,value,fuzzy
 model,"ir.action,name",act_google_translate,Google Translate,Google Traductor,0
-model,"ir.translation.google_translate.init,name",0,Translate with Google Init,Traducir con Google Init,0
-model,"ir.translation.google_translate.start,name",0,Translate with Google Start,Traducir con Google Start,0
+model,"ir.translation.google_translate.init,name",0,Translate with Google Init,Inicializa la traducción con Google,0
+model,"ir.translation.google_translate.start,name",0,Translate with Google Start,Iniciar la traducción con Google,0
 view,ir.translation.google_translate.init,0,Google Translate,Google Traductor,0
 view,ir.translation.google_translate.init,0,Translate with Google Translate?,¿Traducir con Google Traductor?,0
 view,ir.translation.google_translate.start,0,Google Translate,Google Traductor,0
