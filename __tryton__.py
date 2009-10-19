@@ -3,18 +3,18 @@
 {
     'name' : 'Google Translate',
     'name_de_DE' : 'Google Übersetzung',
+    'name_es_CO': 'Traducción de Google',
     'name_es_ES': 'Google Traductor',
     'name_fr_FR': 'Google Translate',
-    'name_es_CO': 'Traducción de Google',
     'version' : '1.1.0',
     'author' : 'B2CK',
     'email': 'info@b2ck.com',
     'website': 'http://www.tryton.org/',
     'description': 'Translate items with Google Translate',
     'description_de_DE': 'Unübersetzte Elemente per Google Übersetzung ausfüllen',
+    'description_es_CO': 'Traducir términos vía Traducción de Google',
     'description_es_ES': 'Traduce términos con Google Traductor',
     'description_fr_FR': 'Traduit les termes avec Google Translate',
-    'description_es_CO': 'Traducir términos vía Traducción de Google',
     'depends' : [
         'ir',
     ],
@@ -23,8 +23,8 @@
     ],
     'translation': [
         'de_DE.csv',
+        'es_CO.csv',
         'es_ES.csv',
         'fr_FR.csv',
-        'es_CO.csv',
     ],
 }
