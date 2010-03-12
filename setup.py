@@ -30,6 +30,7 @@ setup(name='trytond_google_translate',
     package_dir={'trytond.modules.google_translate': '.'},
     packages=[
         'trytond.modules.google_translate',
+        'trytond.modules.google_translate.tests',
     ],
     package_data={
         'trytond.modules.google_translate': info.get('xml', []) \
@@ -57,4 +58,6 @@ setup(name='trytond_google_translate',
     [trytond.modules]
     google_translate = trytond.modules.google_translate
     """,
+    test_suite='tests',
+    test_loader='trytond.test_loader:Loader',
 )
