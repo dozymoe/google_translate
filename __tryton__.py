@@ -6,7 +6,7 @@
     'name_es_CO': 'Traducción de Google',
     'name_es_ES': 'Google Traductor',
     'name_fr_FR': 'Google Translate',
-    'version' : '1.6.0',
+    'version' : '1.6.1',
     'author' : 'B2CK',
     'email': 'info@b2ck.com',
     'website': 'http://www.tryton.org/',
