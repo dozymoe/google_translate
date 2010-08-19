@@ -1,11 +1,11 @@
 #This file is part of Tryton.  The COPYRIGHT file at the top level of
 #this repository contains the full copyright notices and license terms.
-from trytond.model import ModelView
-from trytond.wizard import Wizard
-from trytond.version import PACKAGE, VERSION
 from urllib import urlopen, urlencode, unquote
 from urllib2 import build_opener
 from BeautifulSoup import BeautifulSoup
+from trytond.model import ModelView
+from trytond.wizard import Wizard
+from trytond.version import PACKAGE, VERSION
 GOOGLE_URL = 'http://translate.google.com/translate_t?'
 
 
@@ -52,13 +52,12 @@ class GoogleTranslate(Wizard):
         },
     }
 
-    def _translate(self, cursor, user, data, context=None):
+    def _translate(self, data):
         translation_obj = self.pool.get('ir.translation')
         opener = build_opener()
         opener.addheaders = [('User-agent', '%s/%s' % (PACKAGE, VERSION))]
 
-        for translation in translation_obj.browse(cursor, user, data['ids'],
-                context=context):
+        for translation in translation_obj.browse(data['ids']):
             lang = translation.lang[:2].lower().encode('utf-8')
             src = translation.src.encode('utf-8')
             value = BeautifulSoup(opener.open(GOOGLE_URL + urlencode({
@@ -78,10 +77,10 @@ class GoogleTranslate(Wizard):
             if not value.string:
                 continue
             value = str(value.string)
-            translation_obj.write(cursor, user, translation.id, {
+            translation_obj.write(translation.id, {
                 'value': value,
                 'fuzzy': True,
-                }, context=context)
+                })
         return {}
 
 GoogleTranslate()
