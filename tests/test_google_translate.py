@@ -25,7 +25,7 @@ class GoogleTranslateTestCase(unittest.TestCase):
         '''
         Test views.
         '''
-        self.assertRaises(Exception, test_view('google_translate'))
+        test_view('google_translate')
 
 def suite():
     suite = trytond.tests.test_tryton.suite()
